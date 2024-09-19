@@ -1,150 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Musharraf's portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="musharraf"><img src="assest/logo2.png" alt="Logo" /></div>
-        <div class="right">
-          <ul class="ulNav">
-            <li class="home">
-              <div><a href="#Home" class="nav-link">Home</a></div>
-            </li>
-            <li class="home">
-              <div><a href="#Features" class="nav-link">Features</a></div>
-            </li>
-            <li class="home">
-              <div><a href="#Services" class="nav-link">Services</a></div>
-            </li>
-            <li class="home">
-              <div><a href="#Skills" class="nav-link">Skills</a></div>
-            </li>
-            <li class="home">
-              <div><a href="#Contact Us" class="nav-link">Contact Us</a></div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="Home" class="firstsec">
-        <div class="leftside">
-          <div class="font">hi i'm</div>
-          <div class="font mshrf">Musharraf Ansari</div>
-          <div class="font">now i am Pursuing my</div>
-          <div class="font">Bachelor Degree</div>
-          <span id="element"></span>
-        </div>
-        <div class="rightside"><img src="assest/png3.png" alt="Image" /></div>
-      </section>
-      <!-- <hr /> -->
-      <section id="Features" class="secondsec">
-        <div class="word">Empower your online presence</div>
-      </section>
-      <section class="thirdsec">
-        <video autoplay loop muted src="assest/groupvideo.mp4"></video>
-        <video autoplay loop muted src="assest/codevideo.mp4"></video>
-      </section>
-      <!-- <hr /> -->
-      <h1 class="skills">Skills Overview</h1>
-      <div id="Skills" class="forthsec">
-        <!-- <div class="rig"><img src="assest/skills.jpg" alt="Image" /></div> -->
-         <div class="lef ht">
-            <span><img  class="img" width="30" src="assest/coding-svgrepo-com.svg" alt="" />
-            <span class="tag1">HTML, CSS, Tailwind CSS</span>
-            <br><span class="ht2">
-              Create stunning and responsive user interfaces
-              with HTML, CSS, and Tailwind CSS.
-            </span>
-          </div>
-          <div class="lef ht">
-            <span><img  class="img" width="30" src="assest/coding-svgrepo-com.svg" alt="" />
-            <span class="tag1">HTML, CSS, Tailwind CSS</span>
-            <span class="ht2">
-              Create stunning and responsive user interfaces
-              with HTML, CSS, and Tailwind CSS.
-            </span>
-          </div>
-          <div class="lef ht">
-            <span><img  class="img" width="30" src="assest/coding-svgrepo-com.svg" alt="" />
-            <span class="tag1">HTML, CSS, Tailwind CSS</span>
-            <span class="ht2">
-              Create stunning and responsive user interfaces
-              with HTML, CSS, and Tailwind CSS.
-            </span>
-          </div>
-          <div class="lef ht">
-            <span><img  class="img" width="30" src="assest/coding-svgrepo-com.svg" alt="" />
-            <span class="tag1">HTML, CSS, Tailwind CSS</span>
-            <span class="ht2">
-              Create stunning and responsive user interfaces
-              with HTML, CSS, and Tailwind CSS.
-            </span>
-          </div>
+    <nav>
+      <h2>Musahrraf</h2>
+      <div class="right">
+        <ul class="ulNav">
+          <li class="list forBig">
+            <div><a href="#Home" class="nav-link">Home</a></div>
+          </li>
+          <li class="list forBig">
+            <div><a href="#About" class="nav-link">About</a></div>
+          </li>
+          <li class="list forBig">
+            <div><a href="#Skills" class="nav-link">Skills</a></div>
+          </li>
+          <li class="list forBig">
+            <div><a href="#Internship" class="nav-link">Internship</a></div>
+          </li>
+          <li class="list forBig">
+            <div><a href="#Projects" class="nav-link">Projects</a></div>
+          </li>
+          <li class="list forBig">
+            <div><a href="#Services" class="nav-link">Query</a></div>
+          </li>
+          <li class="list menuLogo" onclick="ShowsideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#Black" style="cursor:pointer"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+        <!-- side bar -->
+        <ul class="ulNav side-bar">
+          <li class="list closeLogo" onclick="ClosesideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#black" style="cursor:pointer"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          <li class="list">
+          <a href="#Home" class="nav-link">Home</a>
+          </li>
+          <li class="list">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="list">
+            <a href="#Skills" class="nav-link">Skills</a>
+          </li>
+          <li class="list">
+           <a href="#Internship" class="nav-link">Internship</a>
+          </li>
+          <li class="list">
+            <a href="#Projects" class="nav-link">Projects</a>
+          </li>
+          <li class="list">
+           <a href="#Services" class="nav-link">Query</a>
+          </li>
+        </ul>
       </div>
-      <!-- <hr /> -->
-      <div id="Services" class="form">
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          class="contact-left"
-        >
-          <div class="h2">
-            <h2>Get in Touch</h2>
-          </div>
-          <input
-            type="hidden"
-            name="access_key"
-            value="0f03f563-af30-4d87-bdcf-c8adac6b7489"
-          />
-          <input type="text" placeholder="enter Name" class="contact-input" />
-          <input type="email" placeholder="enter email" class="contact-input" />
-          <textarea
-            name="message"
-            placeholder="your message"
-            class="contact-input textar"
-          ></textarea>
-          <button class="btnn">
-            submit<img src="assest/arrow_icon.png" alt="" />
-          </button>
-        </form>
-        <img class="imgggg" width="30%" src="assest/sms.png" alt="image" />
-      </div>
-      <footer id="Contact Us" class="footer">
-        <h2>Musharraf Ansari</h2>
-        <div class="flex">
-          <div class="leftflex">Lets Connect</div>
-          <div class="rightflex">
-            <a target="_blank" href="https://www.instagram.com/mf_musharraf/"
-              ><img width="28" height="28" src="assest/instagram.svg" alt=""
-            /></a>
-            <a target="_blank" href="https://github.com/mshrf7869"
-              ><img width="28" height="28" src="assest/github.svg" alt=""
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/musharraf-ansari-63aa65257/"
-              ><img width="28" height="28" src="assest/linkedin.svg" alt=""
-            /></a>
-          </div>
+    </nav>
+    <div id="cursor"></div>
+    <div class="main">
+      <!-- first-row -->
+      <div id="Home" class="first-row scroll" >
+        <div class="first-row-left" data-aos="fade-right">
+          <h1>Hi</h1>
+          <h1 style="color: #a84041">i'm Musharraf Ansari</h1>
+          <p>i am into</p>
+          <p><span style="color: #ff7b00" id="Element"></span></p>
         </div>
-      </footer>
-    </main>
+        <div  class="first-row-right" data-aos="fade-up">
+          <img src="asset/hello.png" alt="" />
+        </div>
+      </div>
+      <!-- moving-div -->
+      <div class="moving-div">
+        <div id="blur-left"></div>
+        <div class="moving">
+          <img src="asset/c.png" alt="" width="50rem" />
+          <img src="asset/js.png" alt="" width="50rem" />
+          <img src="asset/css.png" alt="" width="50rem" />
+          <img src="asset/html.png" alt="" width="50rem" />
+          <img src="asset/kotlin.png" alt="" width="50rem" />
+          <img src="asset/java.png" alt="" width="50rem" />
+          <img src="asset/sql.png" alt="" width="50rem" />
+          <img src="asset/python.png" alt="" width="50rem" />
+        </div>
+        <div class="moving">
+          <img src="asset/c.png" alt="" width="50rem" />
+          <img src="asset/js.png" alt="" width="50rem" />
+          <img src="asset/css.png" alt="" width="50rem" />
+          <img src="asset/html.png" alt="" width="50rem" />
+          <img src="asset/kotlin.png" alt="" width="50rem" />
+          <img src="asset/java.png" alt="" width="50rem" />
+          <img src="asset/sql.png" alt="" width="50rem" />
+          <img src="asset/python.png" alt="" width="50rem" />
+        </div>
+        <div class="moving">
+          <img src="asset/c.png" alt="" width="50rem" />
+          <img src="asset/js.png" alt="" width="50rem" />
+          <img src="asset/css.png" alt="" width="50rem" />
+          <img src="asset/html.png" alt="" width="50rem" />
+          <img src="asset/kotlin.png" alt="" width="50rem" />
+          <img src="asset/java.png" alt="" width="50rem" />
+          <img src="asset/sql.png" alt="" width="50rem" />
+          <img src="asset/python.png" alt="" width="50rem" />
+        </div>
+        <div id="blur-right"></div>
+      </div>
+      <!-- Second-row or about row  -->
+      <div id="About" class="second-row scroll">
+        <div class="h1-div" data-aos="fade-up">
+          <img src="asset/user.png" alt="image" width="60vw" />
+          <h1 id="aboutH2"><span></span>About <span class="Me">Me</span>
+        </h1>
+      </div>
+        <div class="second-row-main">
+          <div class="second-row-left" data-aos="fade-right">
+            <img src="asset/about.png" alt="">
+          </div>
+          <div class="second-row-right" data-aos="fade-left" >
+            <h1 data-aos="fade-left" data-aos-duration="600">I'm <span style="color: #a84041">Musharraf Ansari</span></h1>
+            <h3 data-aos="fade-left" data-aos-duration="800" style="color:#FF7B00">Front-end Developer</h3>
+            <p data-aos="fade-left" data-aos-duration="1000">I am Currently Pursuing my UnderGraduate Degree Bachelor of Computer Application. My passion and Dream is to become a Full Stack Developer.</p>
+          <p>I build Weather Website and New website using HTML CSS JavaScript and Apis. Working for myself to improve my skills. Love to Explore New Things</p>
+          <p style="margin-top: 0.5rem;"><span style="color: blue;">Email :</span>mshrf7869@gmail.com </p>
+          <p><span style="color: blue;">Location :</span> Asansol,West Bengal</p>
+        </div>
+        </div>
+      </div>
+      <!-- third row or internship row -->
+       <div id="Internship" class="third-row scroll">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-dot past"></div>
+        <div class="timeline-content past"  data-aos="fade-left">
+            <h3>GAOtek Inc</h3>
+            <p style="margin-top:0.5rem; letter-spacing:0.1rem;">Website Developer | Internship</p>
+            <p style="margin-top:0.2rem; letter-spacing:0.1rem;">August 2024 - November 2024</p>
+            <a style="margin-top: 0.5rem;" href="#" class="certificate-button">Certificate</a>
+        </div>
+       </div>
+       <!--fourth row or Projects row  -->   
+       <div id="Projects" class="scroll">
+        <h1>Projects </h1> 
+        <div class="box-container">
+         <div class="Proj-box" id="box1" data-aos="fade-right" data-aos-duration="600">
+          <div class="Description"><h1>Weather website</h1>
+          <p>Developed a Weather Website with 5 Days forecaste data using HTML, CSS, and JavaScript.</p></div>
+         </div>
+         <div class="Proj-box" id="box2"  data-aos="fade-right" data-aos-duration="1000">
+          <div class="Description"><h1>Gradient Color Generator</h1>
+            <p>Developed a gradient color code generator using HTML, CSS, and JavaScript.</p></div>
+           </div>
+         </div>
+        </div>
+       </div>
+       <!-- fifth row or Skills row -->
+        <div id="Skills" class="fifth-row scroll">
+          <div><img src="asset/skill.png" alt="" style="width: 3rem;"><h1>Skills</h1></div>
+          <div class="skills-container">
+           <div class="skills-box" id="one" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="two" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="three" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="four" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="five" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="six" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="seven" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="eight" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="nine" data-aos="fade-up" data-aos-duration="800"></div>
+           <div class="skills-box" id="ten" data-aos="fade-up" data-aos-duration="800"></div>
+         </div>
+        </div>
+        <!-- sixth row or Contact row -->
+        <div id="Services" class="form scroll">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left">
+            <div class="h2">
+              <h2>Get in Touch</h2>
+            </div>
+            <input
+              type="hidden"
+              name="access_key"
+              value="0f03f563-af30-4d87-bdcf-c8adac6b7489"
+            />
+            <input type="text" placeholder="enter Name" class="contact-input" />
+            <input type="email" placeholder="enter email" class="contact-input" />
+            <textarea
+              name="message"
+              placeholder="your message"
+              class="contact-input textar"
+            ></textarea>
+            <button class="btnn">
+              submit<img src="asset/arrow_icon.png" alt="" />
+            </button>
+          </form>
+          <img class="imgggg" width="30%" src="asset/sms.png" alt="image" />
+        </div>
+        <!-- last row or footer -->
+        <footer id="Contact" class="footer scroll">
+          <h2>Musharraf Ansari</h2>
+          <div class="flex">
+            <div class="leftflex">Lets Connect</div>
+            <div class="rightflex">
+              <a target="_blank" href="https://www.instagram.com/mf_musharraf/"
+                ><img width="28" height="28" src="asset/instagram.svg" alt=""
+              /></a>
+              <a target="_blank" href="https://github.com/mshrf7869"
+                ><img width="28" height="28" src="asset/github.svg" alt=""
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/musharraf-ansari-63aa65257/"
+                ><img width="28" height="28" src="asset/linkedin.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </footer>
+    </div>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#element", {
+      var typed = new Typed("#Element", {
         strings: [
-          "<i></i> and i am Java Developer.",
-          "&amp; i'm Web Developer.",
+          "<i></i> Front-End Developement",
+          "&amp; also a Java Developer.",
         ],
         typeSpeed: 40,
+        backSpeed: 20, 
+        backDelay: 1000, 
+        startDelay: 500,
+        loop: true,
       });
     </script>
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:150,
+        duration:1000,
+      });
+    </script>
+
+    <script>
+      const sideBar=document.querySelector('.side-bar');
+      function ShowsideBar(){
+       sideBar.style.display='flex'
+      }
+      function ClosesideBar(){
+        sideBar.style.display='none'
+      }
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
